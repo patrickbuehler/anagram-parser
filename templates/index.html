@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Duolingo </title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        input[type=text] {
+            width: 150px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            background-color: white;
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 10px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+      <li><h1>anagram parser</h1></li>
+  </ul>
+
+
+
+  {% if word1 %}
+  <div class="results">
+    {% if anagrams == True %}
+    <h3>Yes, '{{ word1 }}' and '{{ word2 }}' are anagrams of each other.</h3>
+    {% else %}
+    <h3>No, '{{ word1 }}' and '{{ word2 }}' are not anagrams of each other.</h3>
+    {% endif %}
+</div>
+{% else %}
+<div class="results">
+    <h3>Enter two strings below to find out if they are anagrams!</h3>
+</div>
+{% endif %}
+<div class="wrapper">
+    <div class="container">
+        <form action="." method="POST">
+            <div class="left">
+                <div ID="word_div_one">
+                    <input class="inputtext" type="text" name="text" placeholder="Word 1...">
+                </div>
+                <div ID="word_div_two">
+                    <input class="inputtext" type="text" name="text2" placeholder="Word 2...">
+                </div>
+            </div>
+            <div class="right">
+                <input type="submit" ID="submission" name="my-form" value="Go">
+            </div>
+        </form>
+    </div>
+</div>
+
+{% if name %}
+<h1> {{ name }}, {{ text2 }} </h1>
+{% endif %}
+
+</body>
+<footer> Copyright &copy; 2016 Patrick Buehler </footer>
+</html>

@@ -1,0 +1,105 @@
+@font-face {
+	font-family: 'MuseoSans_500-webfont';
+	src: url('museo/MuseoSans_500-webfont.woff');
+}
+
+h1, h3 {
+	font-family:'MuseoSans_500-webfont';
+}
+
+body {
+	margin:0;
+}
+
+.wrapper {
+	text-align: center;
+}
+
+.results {
+	margin:auto;
+	/*width:100%;*/
+	text-align: center;
+}
+
+
+ul.nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	overflow: hidden;
+	background-color: #2ca7e3;
+}
+
+ul.nav li {float: left;
+
+	display: inline-block;
+	color: #fff;
+	vertical-align: middle;
+	font-family: 'MuseoSans_500-webfont';
+	text-align: center;
+	padding: 0px 100px;
+}
+
+.container {
+	text-align: left;
+	width: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.left, .right {
+	display:table-cell; 
+	vertical-align:middle; 
+	white-space: nowrap;
+	padding: 5px;
+}
+.left {
+	width: 100%;
+}
+
+.right button {
+	white-space: nowrap;
+	border-radius: 8px;
+
+}
+
+#submission {
+	-webkit-border-radius: 40;
+	-moz-border-radius: 40;
+	border-radius: 40px;
+	border:0px;
+	font-family: 'MuseoSans_500-webfont';
+	color: #ffffff;
+	font-size: 17px;
+	background: #FF9D00;
+	padding: 10px 25px 10px 25px;
+	text-decoration: none;
+}
+
+#submission:hover {
+	background: #FFBA4D;
+	text-decoration: none;
+}
+
+.inputtext {    
+	width: calc(50% - 20px); 
+	margin: 5px;
+}
+
+
+.inputtext {
+	font-family:'MuseoSans_500-webfont';
+}
+
+
+footer {
+	font-family:'MuseoSans_500-webfont';
+	font:normal;
+	font-weight:lighter;
+	font-size:0.75em;
+	position:fixed;
+	bottom:10px;
+	left:10px;
+}
